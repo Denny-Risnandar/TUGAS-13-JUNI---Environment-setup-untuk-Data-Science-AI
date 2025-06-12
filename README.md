@@ -61,9 +61,10 @@ Kenapa : Mengunduh Anaconda memberikan akses ke alat-alat penting untuk Data Sci
 Do's 
 - Download dari situs resmi Anaconda
 - Simpan file exe installer di folder yang mudah diakses dan aman (misal driver D)
+
 Don'ts:
 - Jangan download dari sumber tidak resmi
-- Jangan simpan di folder system**********
+- Jangan simpan di folder system
 
 ---
 
@@ -141,7 +142,91 @@ C:\Users\Denny\anaconda3\Library\usr\bin
 C:\Users\Denny\anaconda3\Library\bin
 C:\Users\Denny\anaconda3\Scripts
 ```
+---
+## 5. Aplikasi / Environment Conda
+Membuat Environment Conda
+- Apa: Lingkungan Conda adalah ruang terisolasi untuk Python dan paket proyek.
+- Kenapa: Isolasi mencegah konflik versi paket, memastikan stabilitas.
 
+Do and Don'ts:
+- Do: Beri nama lingkungan yang relevan.
+- Don't: Jangan buat di direktori tidak terkait.
+
+Langkah-langkah:
+- Di terminal VS Code (Ctrl+`), ketik: conda create -p venv python=3.12
+- Ketik y saat diminta.
+
+hasil akan menampilkan sbb :
+```
+C:\Users\Denny>conda create -p venv python=3.12
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\Denny\venv
+
+  added / updated specs:
+    - python=3.12
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    expat-2.7.1                |       h8ddb27b_0         259 KB
+    pip-25.1                   |     pyhc872135_2         1.3 MB
+    python-3.12.11             |       h716150d_0        16.5 MB
+    setuptools-78.1.1          |  py312haa95532_0         2.2 MB
+    tk-8.6.14                  |       h5e9d12e_1         3.5 MB
+    tzdata-2025b               |       h04d1e81_0         116 KB
+    vc-14.42                   |       haa95532_5          11 KB
+    vs2015_runtime-14.42.34433 |       hbfb602d_5         1.2 MB
+    wheel-0.45.1               |  py312haa95532_0         177 KB
+    xz-5.6.4                   |       h4754444_1         280 KB
+    ------------------------------------------------------------
+                                           Total:        25.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-h2bbff1b_6
+  ca-certificates    pkgs/main/win-64::ca-certificates-2025.2.25-haa95532_0
+  expat              pkgs/main/win-64::expat-2.7.1-h8ddb27b_0
+  libffi             pkgs/main/win-64::libffi-3.4.4-hd77b12b_1
+  openssl            pkgs/main/win-64::openssl-3.0.16-h3f729d1_0
+  pip                pkgs/main/noarch::pip-25.1-pyhc872135_2
+  python             pkgs/main/win-64::python-3.12.11-h716150d_0
+  setuptools         pkgs/main/win-64::setuptools-78.1.1-py312haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.45.3-h2bbff1b_0
+  tk                 pkgs/main/win-64::tk-8.6.14-h5e9d12e_1
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0
+  vc                 pkgs/main/win-64::vc-14.42-haa95532_5
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.42.34433-hbfb602d_5
+  wheel              pkgs/main/win-64::wheel-0.45.1-py312haa95532_0
+  xz                 pkgs/main/win-64::xz-5.6.4-h4754444_1
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate C:\Users\Denny\venv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+```
 
 
 
