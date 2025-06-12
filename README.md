@@ -1,6 +1,5 @@
-## TUGAS-13-JUNI
-**Environment-setup-untuk-Data-Science-AI** 
-TUGAS 13 JUNI - Environment setup untuk Data Science/AI dengan:
+## TUGAS 13 JUNI
+**Environment setup untuk Data Science AI** 
 
 **📚Anaconda**  
 **📚Conda**  
@@ -113,9 +112,9 @@ Langkah-langkah:
 ```
 conda --version
 - Output = conda 24.1.0
-menunjukkan keberhasilan.
-- Keberhasilan: Nomor versi mengonfirmasi instalasi berhasil.
 ```
+Tampilan tersebut merupakan nomor versi menunjukkan keberhasilan proses instalasi.
+
 ---
 ## 4. Konfigurasi PATH
 
@@ -144,7 +143,8 @@ C:\Users\Denny\anaconda3\Scripts
 ```
 ---
 ## 5. Aplikasi / Environment Conda
-Membuat Environment Conda
+---
+A. Membuat Environment Conda
 - Apa: Lingkungan Conda adalah ruang terisolasi untuk Python dan paket proyek.
 - Kenapa: Isolasi mencegah konflik versi paket, memastikan stabilitas.
 
@@ -226,6 +226,25 @@ Executing transaction: done
 # To deactivate an active environment, use
 #
 #     $ conda deactivate
+```
+---
+B. Mengaktifkan Environment Conda
+
+- Apa: Aktivasi menggunakan Python dan paket dari lingkungan Conda.
+- Kenapa: Ini memastikan perintah menggunakan lingkungan proyek, bukan dasar.
+
+Do and Don'ts:
+- Do: Periksa prompt untuk konfirmasi aktivasi.
+- Don't: Jangan jalankan perintah sebelum aktif.
+
+Langkah-langkah:
+- Ketik:
+conda activate venv/
+
+```
+C:\Users\Denny>conda activate venv/
+
+(C:\Users\Denny\venv) C:\Users\Denny>
 ```
 
 
