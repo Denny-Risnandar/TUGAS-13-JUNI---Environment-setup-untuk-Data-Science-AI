@@ -1,4 +1,4 @@
-# TUGAS-13-JUNI
+## TUGAS-13-JUNI
 **Environment-setup-untuk-Data-Science-AI** 
 TUGAS 13 JUNI - Environment setup untuk Data Science/AI dengan:
 
@@ -57,14 +57,15 @@ Kenapa : Mengunduh Anaconda memberikan akses ke alat-alat penting untuk Data Sci
     - berikut tampilan nya.
 
 ![image](https://github.com/Denny-Risnandar/TUGAS-13-JUNI---Environment-setup-untuk-Data-Science-AI/blob/main/ANACONDA%202.png)
-   
-   Do's:
-	- Download dari situs resmi Anaconda
-	- Simpan file exe installer di folder yang mudah diakses dan aman (misal driver D)
-   Don'ts:
-	- Jangan download dari sumber tidak resmi
-	- Jangan simpan di folder system
- ---
+
+Do's 
+- Download dari situs resmi Anaconda
+- Simpan file exe installer di folder yang mudah diakses dan aman (misal driver D)
+Don'ts:
+- Jangan download dari sumber tidak resmi
+- Jangan simpan di folder system**********
+
+---
 
  ## 2. Cara instalasi Anaconda ##
 
@@ -76,20 +77,73 @@ Kenapa: Instalasi yang benar memungkinkan Anaconda terintegrasi dengan sistem, s
 
 Langkah-langkah:
 
-Klik dua kali Anaconda3-2024.10-1-Windows-x86_64.exe.
-Klik "Next" pada layar sambutan.
-Setujui syarat lisensi.
-Pilih "Just Me (recommended)".
-Gunakan lokasi default (C:\Users\NAMA_ANDA\anaconda3).
-Centang:
+1. Klik dua kali Anaconda3-2024.10-1-Windows-x86_64.exe.
+2. Klik "Next" pada layar sambutan.
+3. Setujui syarat lisensi.
+4. Pilih "Just Me (recommended)".
+5. Gunakan lokasi default (C:\Users\NAMA_ANDA\anaconda3).
+6. Centang:
 ✓ Tambahkan Anaconda3 ke PATH.
 ✓ Jadikan Anaconda3 sebagai Python 3.12 default.
-Klik "Install" dan tunggu selesai.
+7. Klik "Install" dan tunggu selesai.
 
 Do and Don'ts:
+- Do: Centang opsi untuk menambahkan Anaconda ke PATH.
+- Don't: Jangan ubah lokasi instalasi default tanpa alasan kuat.
 
-Do: Centang opsi untuk menambahkan Anaconda ke PATH.
-Don't: Jangan ubah lokasi instalasi default tanpa alasan kuat.
+![image](https://github.com/Denny-Risnandar/TUGAS-13-JUNI---Environment-setup-untuk-Data-Science-AI/blob/main/instal%20anaconda%202.png)
+
+---
+## 3. Verifikasi Keberhasilan Instalasi
+
+Apa: Verifikasi memastikan Anaconda terinstal dan dapat diakses.
+
+Kenapa: Ini mendeteksi masalah seperti PATH yang salah, memungkinkan perbaikan dini.
+
+Do and Don'ts:
+- Do: Buka terminal baru untuk menerapkan perubahan PATH.
+- Don't: Jangan abaikan pesan kesalahan.
+
+Langkah-langkah:
+
+- Buka Command Prompt.
+- Ketik dan eksekusi:
+
+```
+conda --version
+- Output = conda 24.1.0
+menunjukkan keberhasilan.
+- Keberhasilan: Nomor versi mengonfirmasi instalasi berhasil.
+```
+---
+## 4. Konfigurasi PATH
+
+Apa: PATH memberi tahu sistem operasi lokasi program berada seperti Conda dan Python.
+
+Kenapa: Tanpa PATH yang benar, perintah Anaconda tidak dapat dijalankan dari terminal.
+
+Do and Don'ts:
+- Do: Verifikasi semua jalur ditambahkan.
+- Don't: Jangan hapus entri PATH lain.
+
+Langkah-langkah:
+
+1. Tekan Windows + R, ketik sysdm.cpl, tekan Enter.
+2. Pergi ke tab "Advanced", klik "Environment Variables".
+3. Pilih "Path" di "System variables", klik "Edit".
+4. Tambahkan (ganti NAMA_ANDA):
+
+hasil pengecekan akan menampilkan sebagai berikut :
+```
+C:\Users\Denny\anaconda3
+C:\Users\Denny\anaconda3\Library\mingw-w64\bin
+C:\Users\Denny\anaconda3\Library\usr\bin
+C:\Users\Denny\anaconda3\Library\bin
+C:\Users\Denny\anaconda3\Scripts
+```
+
+
+
 
 
 
