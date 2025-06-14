@@ -319,7 +319,49 @@ Installing collected packages: uv
 Successfully installed uv-0.7.13
 ```
 
+B. Menginisialisasi Proyek UV
 
+- Apa: Inisialisasi membuat struktur proyek UV.
+- Kenapa: Ini menyiapkan direktori proyek dan lingkungan virtual.
+
+Do and Don'ts:
+- Do: Gunakan nama proyek yang jelas.
+- Don't: Jangan inisialisasi di direktori proyek lain.
+Langkah-langkah:
+
+Ketik:
+```
+uv init proyek_dennyETL
+- D:\>cd proyek_dennyETL
+- D:\proyek_dennyETL>
+```
+Output menunjukkan proyek diinisialisasi di D:\proyek_dennyETL>
+
+C. Membuat dan Mengaktifkan Lingkungan UV
+
+- Apa: Lingkungan virtual UV mengisolasi dependensi proyek.
+- Kenapa: Isolasi mencegah konflik antar proyek.
+
+Do and Don'ts:
+- Do: Aktifkan sebelum instalasi paket.
+- Don't: Jangan ubah folder .venv manual.
+
+Langkah-langkah:
+
+```
+Ketik:
+uv venv
+output : 
+Using CPython 3.12.7 interpreter at: C:\Users\Denny\anaconda3\python.exe
+Creating virtual environment at: .venv
+Activate with: D:\.venv\Scripts\activate
+(karena saya merubah driver dari C ke D)
+
+Aktifkan:
+.venv\Scripts\activate
+
+Prompt berubah ke (.venv) D:\>
+```
 
 
 
