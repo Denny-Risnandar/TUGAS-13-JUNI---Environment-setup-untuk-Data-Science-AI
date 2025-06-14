@@ -246,6 +246,79 @@ C:\Users\Denny>conda activate venv/
 
 (C:\Users\Denny\venv) C:\Users\Denny>
 ```
+---
+C. Menginstal Paket
+
+- Apa: Instalasi paket menambahkan pustaka untuk proyek.
+- Kenapa: Paket seperti pandas dan numpy penting untuk analisis data.
+
+Do and Don'ts:
+- Do: Gunakan requirements.txt untuk manajemen.
+- Don't: Hindari instalasi di lingkungan dasar.
+
+Langkah-langkah:
+
+Buat file requirements.txt di VS Code:
+Buka VS Code di folder C:\Users\NAMA_ANDA\ghost_intellix (dari langkah 3.3).
+Klik menu File → New File, atau klik kanan di Explorer pane → New File.
+Namai file requirements.txt dan tekan Enter.
+
+Ketik konten berikut:
+```
+pandas
+numpy
+matplotlib
+```
+---
+D. Menonaktifkan Lingkungan
+
+- Apa: Menonaktifkan mengembalikan ke lingkungan dasar.
+- Kenapa: Ini mencegah perubahan tak sengaja pada lingkungan proyek.
+
+Do and Don'ts:
+- Do: Nonaktifkan setelah selesai.
+- Don't: Jangan biarkan aktif saat tidak diperlukan.
+
+Langkah-langkah:
+
+Ketik:
+conda deactivate
+Prompt kembali ke C:\Users\NAMA_ANDA\ghost_intellix>.
+```
+(C:\Users\Denny\venv) C:\Users\Denny>conda deactivate
+
+C:\Users\Denny>
+```
+---
+Lingkungan UV
+---
+A. Menginstal UV
+
+- Apa: UV adalah alat manajemen paket dan lingkungan berbasis Rust yang cepat.
+  Kenapa: UV mempercepat instalasi paket, ideal untuk proyek dengan banyak dependensi.
+
+Do and Don'ts:
+- Do: Pastikan lingkungan Conda tidak aktif.
+- Don't: Jangan gunakan UV untuk paket khusus Conda.
+
+Langkah-langkah:
+Pastikan lingkungan Conda tidak aktif (jalankan conda deactivate jika perlu).
+
+Ketik:
+```
+pip install uv
+```
+
+```
+C:\Users\Denny>pip install uv
+Collecting uv
+  Downloading uv-0.7.13-py3-none-win_amd64.whl.metadata (12 kB)
+Downloading uv-0.7.13-py3-none-win_amd64.whl (18.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.8/18.8 MB 8.2 MB/s eta 0:00:00
+Installing collected packages: uv
+Successfully installed uv-0.7.13
+```
+
 
 
 
