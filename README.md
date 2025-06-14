@@ -363,7 +363,59 @@ Aktifkan:
 Prompt berubah ke (.venv) D:\>
 ```
 
+D. Menginstal Paket dengan UV
 
+- Apa: UV menginstal paket dengan cepat menggunakan antarmuka pip.
+- Kenapa: Kecepatan UV menghemat waktu untuk dependensi besar.
 
+Do and Don'ts:
+- Do: Gunakan uv add.
+- Don't: Jangan campur UV dan pip.
+
+Langkah-langkah:
+
+Ketik:
+uv add pandas
+
+saya masuk ke folder percontohan saya d drive D:\>cd proyek_dennyETL
+
+D:\proyek_dennyETL> (kemudian saya ketik) uv venv
+```
+Using CPython 3.12.7 interpreter at: C:\Users\Denny\anaconda3\python.exe
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+```
+setelah active baru saya ketikan uv add pandas 
+```
+D:\proyek_dennyETL>uv add pandas
+Resolved 7 packages in 516ms
+Prepared 6 packages in 12.15s
+░░░░░░░░░░░░░░░░░░░░ [0/6] Installing wheels...                                                                         warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 6 packages in 1.57s
+ + numpy==2.3.0
+ + pandas==2.3.0
+ + python-dateutil==2.9.0.post0
+ + pytz==2025.2
+ + six==1.17.0
+ + tzdata==2025.2
+```
+
+E. Menonaktifkan Lingkungan UV
+
+- Apa: Menonaktifkan mengembalikan ke lingkungan global.
+- Kenapa: Ini mencegah perubahan tak sengaja.
+
+Do and Don'ts:
+- Do: Nonaktifkan setelah selesai.
+- Don't: Jangan biarkan aktif.
+
+Langkah-langkah:
+
+Ketik:
+.venv\Scripts\deactivate
+
+Prompt kembali ke D:\proyek_dennyETL>
 
  
